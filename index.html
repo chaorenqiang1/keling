@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E2A38; /* 深蓝色背景，提供一个更加现代和专业的外观 */
+}
+
+
+</style>
+
+<link type="text/css" rel="stylesheet" href="css/iview1.css" />
+<link type="text/css" rel="stylesheet" href="css/skin1/style1.css" />
+<link type="text/css" rel="stylesheet" href="css/bullet.css" /> <!-- 引入弹幕CSS文件 -->
+<link rel="stylesheet" href="banniang/css/pio.css">
+<link type="text/css" rel="stylesheet" href="css/播放.css" />
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/raphael-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/iview.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#iview').iView({
+        pauseTime: 7000,
+        directionNav: false,
+        controlNav: true,
+        tooltipY: -15
+    });
+});
+</script>
+
+</head>
+<body>
+
+<div class="container">
+    <div id="iview">
+        <div data-iview:image="photos/photo1.jpg" data-iview:transition="slice-top-fade,slice-right-fade">
+            <div class="iview-caption caption1" data-x="80" data-y="200">柯灵故居</div>
+            <div class="iview-caption" data-x="80" data-y="275" data-transition="wipeRight">复兴西路147号</div>
+        </div>
+
+        <div data-iview:image="photos/photo2.jpg" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+            <div class="iview-caption caption5" data-x="60" data-y="280" data-transition="wipeDown">公寓住宅</div>
+            <div class="iview-caption caption6" data-x="300" data-y="350" data-transition="wipeUp">始建于1933年</div>
+        </div>
+      <div data-iview:image="photos/photo3.jpg">
+            <div class="iview-caption caption4" data-x="50" data-y="80" data-width="312" data-transition="fade">柯灵故居:</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="135" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">建筑面积约192平方米</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="192" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">西班牙式风格</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="249" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">粉黄色的拉毛外墙</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="306" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">暗红色瓦顶</div>
+        </div>
+
+        <div data-iview:image="photos/photo4.jpg"data-iview:type="video" data-iview:transition="strip-right-fade,strip-left-fade">
+            <iframe src="http://player.vimeo.com/video/11475955?byline=1&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <div class="iview-caption caption2" data-x="450" data-y="340" data-transition="wipeRight">曾使用过的</div>
+            <div class="iview-caption caption3" data-x="600" data-y="345" data-transition="wipeLeft">书房</div>
+        </div>
+
+
+        <div data-iview:image="photos/photo5.jpg">
+            <div class="iview-caption caption7" data-x="0" data-y="0" data-width="180" data-height="480" data-transition="wipeRight">
+                <h3>柯灵原名高季琳</h3>
+                <p>中国著名散文家、杂文家、编辑家和剧作家<br><br>中国民主促进会创始人之一<br><br>曾任民进中央名誉副主席、国际笔会上海中心会长等职</p>
+            </div>
+        </div>
+
+        <div data-iview:image="photos/photo6.jpg">
+
+        </div>
+        <div data-iview:image="photos/photo7.jpg" data-iview:transition="slice-top-fade,slice-right-fade">
+            <div class="iview-caption caption1" data-x="80" data-y="200">一楼展厅</div>
+        </div>
+
+        <div data-iview:image="photos/photo8.jpg" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+
+        </div>
+
+        <div data-iview:image="photos/photo9.jpg" data-iview:type="video" data-iview:transition="strip-right-fade,strip-left-fade">
+
+
+        </div>
+
+        <div data-iview:image="photos/photo10.jpg">
+            <div class="iview-caption caption4" data-x="50" data-y="80" data-width="312" data-transition="fade">2016年2月</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="135" data-transition="wipeLeft" data-easing="easeInOutElastic">柯灵故居举行开馆仪式</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="192" data-transition="wipeLeft" data-easing="easeInOutElastic">正式对公众开放</div>
+
+        </div>
+
+        <div data-iview:image="photos/photo11.jpg">
+            <div class="iview-caption caption7" data-x="0" data-y="0" data-width="180" data-height="480" data-transition="wipeRight">
+                <h3>开馆后不久</h3>
+                <p>民进市委策划在柯灵故居建立上海民进会史教育基地，并取得馆方及主管单位的大力支持</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+    </div>
+
+    <audio id="backgroundMusic1" src="audio/柯灵1.wav"></audio>
+    <audio id="backgroundMusic2" src="audio/柯灵2.wav"></audio>
+
+    <div id="clickToPlay">点击开始旅行</div>
+
+<div class="danmaku-container"></div>
+<div class="pio-container left">
+    <div class="pio-action"></div>
+    <canvas id="pio" width="300" height="400"></canvas>
+</div>
+
+<script type="text/javascript" src="js/bullet.js"></script> <!-- 引入弹幕JavaScript文件 -->
+<script src="banniang/js/pio.js"></script>
+<script src="banniang/js/l2d.js"></script>
+<script src="js/播放.js"></script>
+<script>
+    var pio = new Paul_Pio({
+    "mode": "fixed",
+    "tips": true,
+    "hidden": true,
+    "content": {
+        "welcome": ["欢迎来旅行！", ],
+    },
+    "model": [
+     "banniang/live2d-widget-models/live2d-widget-model-shizuku/assets/shizuku.model.json",
+
+    ]
+});
+</script>
+
+</body>
+</html>
